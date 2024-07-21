@@ -9,3 +9,6 @@ app.secret_key = 'your_secret_key_here'
 @app.route("/create-new-post")
 def index():
     return secrets.token_hex(64)
+
+if __name__ == "__main__":
+   app.run()
